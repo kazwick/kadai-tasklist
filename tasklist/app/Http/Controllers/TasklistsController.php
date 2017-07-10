@@ -78,7 +78,7 @@ class TasklistsController extends Controller
      */
     public function edit($id)
     {
-        $tasklost = Tasklist::find($id);
+        $tasklist = Tasklist::find($id);
 
         return view('tasklists.edit', [
             'tasklist' => $tasklist,
